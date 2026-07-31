@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jaeheon Lee — CV</title>
+<meta name="description" content="Curriculum vitae of Jaeheon Lee, computer engineering undergraduate at Hongik University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --desk:#E6E6E1;
+  --page:#FFFFFF;
+  --rule:#B9BEC4;
+  --hair:#DFE2E5;
+  --ink:#191C1F;
+  --navy:#1B2A44;
+  --mute:#5A6167;
+  --link:#154A73;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--desk);
+  font-family:var(--serif);font-size:17px;line-height:1.65;color:var(--ink);
+  -webkit-font-smoothing:antialiased;
+}
+.page{
+  max-width:760px;margin:48px auto;background:var(--page);
+  padding:74px 96px 82px;
+  border:1px solid #D3D3CE;
+  box-shadow:0 1px 3px rgba(0,0,0,.05);
+}
+a{color:var(--link);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:.5px}
+a:hover{text-decoration-thickness:1.5px}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+
+/* header */
+.masthead{text-align:center;margin-bottom:46px}
+.masthead h1{
+  font-size:2.3rem;font-weight:700;letter-spacing:.01em;
+  color:var(--ink);margin:0 0 12px;line-height:1.15;
+}
+.masthead p{margin:2px 0;font-size:1rem;color:var(--mute)}
+
+/* sections */
+h2{
+  font-size:.95rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.11em;
+  color:var(--navy);margin:38px 0 0;
+  padding-bottom:5px;border-bottom:1.5px solid var(--rule);
+}
+h2:first-of-type{margin-top:0}
+
+/* dated rows: date | content | place */
+.row{
+  display:grid;grid-template-columns:100px 1fr auto;
+  gap:0 22px;padding:15px 0;
+}
+.row+.row{border-top:1px solid var(--hair)}
+.when{font-size:.9rem;color:var(--mute);line-height:1.45}
+.where{font-size:.9rem;color:var(--mute);text-align:right;line-height:1.45;white-space:nowrap}
+.title{font-weight:600;color:var(--navy)}
+.sub{color:var(--ink)}
+.note{font-style:italic;color:var(--mute);margin-top:3px}
+.note em{font-style:normal}
+
+/* bullet lists */
+ul.list{margin:14px 0 0;padding:0 0 0 20px}
+ul.list li{margin:0 0 8px;padding-left:3px}
+ul.list li:last-child{margin-bottom:0}
+ul.list li::marker{color:var(--mute)}
+.d{color:var(--mute);white-space:nowrap}
+.lead{font-weight:600;color:var(--navy)}
+
+footer{
+  margin-top:46px;padding-top:16px;border-top:1px solid var(--hair);
+  font-size:.85rem;color:var(--mute);text-align:center;
+}
+
+@media (max-width:720px){
+  body{font-size:16px;background:var(--page)}
+  .page{margin:0;padding:36px 24px 52px;border:0;box-shadow:none;max-width:none}
+  .masthead{text-align:left;margin-bottom:34px}
+  .masthead h1{font-size:1.9rem}
+  .row{grid-template-columns:1fr;gap:3px}
+  .when{order:2;font-size:.86rem}
+  .where{order:3;text-align:left;font-size:.86rem}
+  .row>div:nth-child(2){order:1}
+}
+@media print{
+  body{background:#fff}
+  .page{margin:0;padding:0;border:0;box-shadow:none;max-width:none}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <h1>Jaeheon Lee</h1>
+    <p>Hongik University, Department of Computer Engineering</p>
+    <p><a href="mailto:teddleekid@gmail.com">teddleekid@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/Loda1002">github.com/Loda1002</a></p>
+  </header>
+
+  <h2>Education</h2>
+  <div class="row">
+    <div class="when">Mar. 2026 ~<br>Present</div>
+    <div>
+      <div class="title">Hongik University</div>
+      <div class="sub">Department of Computer Engineering</div>
+      <div class="note">Bachelor Student, entered by transfer with a prior B.S.</div>
+    </div>
+    <div class="where">Seoul,<br>Korea</div>
+  </div>
+  <div class="row">
+    <div class="when">Mar. 2024 ~<br>Feb. 2026</div>
+    <div>
+      <div class="title">Dongguk University Institute for Core Ability (DUICA)</div>
+      <div class="sub">Department of Computer Engineering</div>
+      <div class="note"><em>B.S. in Computer Engineering &nbsp;·&nbsp; GPA 4.35 / 4.5</em></div>
+    </div>
+    <div class="where">Seoul,<br>Korea</div>
+  </div>
+
+  <h2>Research Interests</h2>
+  <ul class="list">
+    <li>Brain&ndash;Computer Interface (BCI)</li>
+    <li>EEG&ndash;EMG Signal Fusion</li>
+  </ul>
+
+  <h2>Research Experiences</h2>
+  <ul class="list">
+    <li>Research Student at PEM Lab (Prof. Ha-Yoon Song), Hongik University, Korea <span class="d">(May 2026 ~ Present)</span><br>Attending weekly lab seminars</li>
+  </ul>
+
+  <h2>Independent Research</h2>
+  <ul class="list">
+    <li><span class="lead">Reimplementation of Lee et al., IEEE BCI 2025</span> / Three-class SVM classification of Alzheimer's disease, frontotemporal dementia, and healthy controls from resting-state EEG. Written from the paper alone, without the authors&rsquo; code. <span class="d">(Jul. 2026)</span></li>
+    <li><span class="lead">EEG&ndash;EMG Fusion for Myoelectric Prosthesis Control</span> &mdash; research proposal / EEG used to judge whether a movement was intended, not which movement, so that fewer electrodes are needed <span class="d">(2026)</span></li>
+  </ul>
+
+  <h2>Skills and Techniques</h2>
+  <ul class="list">
+    <li>Programming: Python, C/C++, Verilog</li>
+    <li>Tools: Git, LaTeX, Linux, Vivado</li>
+    <li>Libraries: NumPy, scikit-learn, MNE-Python</li>
+  </ul>
+
+  <h2>Projects</h2>
+  <ul class="list">
+    <li>Agent Harness Design for a Small Language Model, 2026 Samsung Collegiate Programming Challenge (AI Challenge), Samsung Electronics, Korea / 53rd of 640 on hidden test set; 121st on public leaderboard <span class="d">(Jul. 2026)</span></li>
+    <li>SynapStock: An Autonomous Trading System with Invoice-Level Spend Control for AI Agents, Google Cloud &times; Solana AI Agentic Hackathon, Google Cloud &amp; Solana Foundation, Korea / Team lead; backend and architecture. Each invoice is checked before an agent signs it, so spending stays within a set budget without human approval &mdash; <a href="https://github.com/Loda1002/SynapStock">code</a> <span class="d">(Jul. 2026 ~ Present)</span></li>
+    <li>Where and for Whom Does Youth "Resting" Become Entrenched?, 2026 National Data Utilization Competition, Korea / Data analysis, statistical modeling, visualization <span class="d">(Jun. ~ Jul. 2026)</span></li>
+    <li>RecallCatcher: A Proposed LLM-Based Matching Engine to Prevent Re-Listing of Recalled Products in Online Marketplaces, 14th Public Data Utilization Contest (Idea Track), Ministry of Trade, Industry and Resources (MOTIR), Korea / Co-proposed the concept; primary author of the project proposal <span class="d">(Jul. 2026)</span></li>
+    <li>THE Waffle, 3rd Cohort, Seongnam City Youth Foundation, Korea / Co-founder (2-person team); took a product from concept through a <a href="https://www.wadiz.kr/web/campaign/detail/369249">crowdfunding campaign</a> to sale <span class="d">(Jun. ~ Nov. 2025)</span></li>
+  </ul>
+
+  <h2>Awards and Honors</h2>
+  <ul class="list">
+    <li>Full Scholarship, DUICA, Korea <span class="d">(Aug. 2025)</span></li>
+  </ul>
+
+  <h2>Teaching Experience</h2>
+  <ul class="list">
+    <li>Taekwondo Instructor, Kids Suksa Taekwondo Academy, Korea <span class="d">(Sep. 2023 ~ Dec. 2024)</span><br>Part-time (Sep. ~ Nov. 2023), full-time (Dec. 2023 ~ Dec. 2024)</li>
+  </ul>
+
+  <h2>Extracurricular Activities</h2>
+  <ul class="list">
+    <li>HI-ARC (Algorithm Study Club), Hongik University, Korea <span class="d">(Mar. 2026 ~ Present)</span></li>
+    <li>Hongik Taekwon (Taekwondo Club), Hongik University, Korea <span class="d">(Mar. 2026 ~ Present)</span></li>
+  </ul>
+
+  <h2>Certifications</h2>
+  <ul class="list">
+    <li>Network Administrator, Level 2, ICQA, 2025</li>
+    <li>Computer Specialist in Spreadsheet &amp; Database, Level 2, KCCI, 2025</li>
+    <li>Administrative Manager, Level 2, KOAMA, 2024</li>
+  </ul>
+
+  <footer>Last updated July 2026</footer>
+
+</div>
+</body>
+</html>
