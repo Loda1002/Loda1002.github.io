@@ -90,9 +90,18 @@ footer{
   .where{order:3;text-align:left;font-size:.86rem}
   .row>div:nth-child(2){order:1}
 }
+@page{size:A4;margin:16mm 17mm}
 @media print{
-  body{background:#fff}
+  body{background:#fff;font-size:10.5pt;line-height:1.45}
   .page{margin:0;padding:0;border:0;box-shadow:none;max-width:none}
+  .masthead{margin-bottom:22px}
+  h2{margin-top:20px;break-after:avoid;page-break-after:avoid}
+  .row,ul.list li{break-inside:avoid;page-break-inside:avoid}
+  .row{padding:8px 0}
+  ul.list{margin-top:8px}
+  ul.list li{margin-bottom:5px}
+  a{color:var(--ink)}
+  footer{display:none}
 }
 </style>
 </head>
